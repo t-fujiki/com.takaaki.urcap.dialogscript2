@@ -1,0 +1,5 @@
+conn = rpc_factory("xmlrpc", "http://127.0.0.1:" + to_str({port}) + "/RPC2")
+
+def show():
+  return conn.dialog.show()
+end
